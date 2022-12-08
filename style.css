@@ -1,0 +1,315 @@
+:root {
+  --clr: #222327;
+}
+body {
+  padding: 1em;
+  background-color: var(--clr) ;
+  color: rgb(255, 255, 255);
+} 
+
+
+.navigation {
+  position: fixed;
+  width: 400px;
+  height: 100px;
+  background-color: var(--clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: white solid 2px;
+  top: 500px;
+  left: 470px;
+  opacity: 0.7;
+}
+
+.navigation ul {
+  display: flex;
+  width: 350px;
+}
+
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  transition: 0.5s;
+  color: white;
+  border: white;
+}
+
+.navigation ul li.active a .icon {
+  transform: translateY(-32px);
+}
+
+.navigation ul li a .text {
+  position: absolute;
+  color: white;
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.navigation ul li.active a .text {
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+
+
+/* Indicator Transitions */
+.navigation ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(70px * 0));
+}
+.navigation ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(70px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(70px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(70px * 3));
+}
+.navigation ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(calc(70px * 4));
+}
+
+header {
+  text-align: center;
+}
+
+.myphoto {
+  width: 25em;
+  border-radius: 50%;
+  border: rgb(201, 112, 212) solid 0.3em;
+  margin-bottom: 2em;
+}
+
+.aboutmetext {
+  color: rgb(113, 113, 221);
+}
+
+.aboutme {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 2em;
+}
+
+.aboutme :hover{
+  background-color: var(--clr);
+}
+
+.introduction {
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  margin-left: 4em;
+}
+
+.achievment {
+  background-color: royalblue;
+  display: inline-block;
+  width: 10em;
+  height: 8em;
+  border-radius: 30%;
+  border: #fff solid 2px;
+  margin-right: 0.5em;
+}
+
+
+.clints {
+  background-color: royalblue;
+  display: inline-block;
+  width: 10em;
+  height: 8em;
+  border-radius: 30%;
+  border: #fff solid 2px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.projects {
+  background-color: royalblue;
+  display: inline-block;
+  width: 10em;
+  height: 8em;
+  border-radius: 30%;
+  border: #fff solid 2px;
+  margin-left: 0.5em;
+}
+
+ion-icon {
+  margin-top: 30px;
+}
+
+#text {
+  margin: -0.5px;
+}
+
+#texts {
+  margin: 1.3em;
+}
+
+.skills {
+  text-align: center;
+  margin-top: 10em;
+}
+
+.skills :hover {
+  background-color: var(--clr);
+}
+
+.myexperiance {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 2em;
+}
+
+.htmlcssexperiance {
+  background-color: royalblue;
+  display: inline-block;
+  width: 17em;
+  height: 6em;
+  border-radius: 3em;
+  border: #fff solid 2px ;
+  margin-right: 0.5em;
+  padding-top: 0.1em;
+}
+
+.html {
+  margin-top: -1em;
+}
+
+.services {
+  text-align: center;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  
+}
+
+.servicetext {
+  color: rgb(113, 113, 221);
+}
+
+.box {
+  background-color: royalblue;
+  width: 40em;
+  height: 18em;
+  margin-left: 20em;
+  border-bottom-right-radius: 5em;
+  border-bottom-left-radius: 5em;
+  border: #fff transparent 2px;
+}
+
+.services :hover {
+  background-color: var(--clr);
+}
+
+.bigbox :hover {
+  border:  #fff solid 2px;
+  border-top: var(--clr);
+  border-bottom-left-radius: 5em;
+  border-bottom-right-radius: 5em;
+}
+
+.inbox {
+  background-color: aquamarine;
+  height: 5em;
+  border-bottom-right-radius: 5em;
+  border-bottom-left-radius: 5em;
+}
+
+.top {
+  color: rgb(48, 69, 133);
+  font-size: 25px;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+.middle {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 5em;
+  margin-top: 3em;
+}
+
+.last {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 5em;
+}
+
+
+.getintouch {
+  text-align: center;
+}
+
+.email {
+  background-color: royalblue;
+  display: inline-block;
+  width: 20em;
+  height: 10em;
+  border-radius: 3em;
+  border: #fff solid 2px;
+  padding-top: 0.2em;
+  margin-bottom: 5em;
+}
+
+
+.getintouch :hover {
+  background-color: var(--clr);
+}
+.mail {
+  color: black;
+}
+
+footer {
+  padding-left: 400px;
+}
+
+.gamebox {
+  text-align: center;
+  width: 500px;
+  border: #fff solid 2px;
+  border-radius: 10px;
+  background-color: royalblue;
+  margin-bottom: 10em;
+}
+
+footer :hover {
+  background-color: var(--clr);
+}
+.gamelink {
+  text-decoration: none;
+  color: rgb(144, 236, 236);
+}
+
+
+.shoes {
+  background-color: rgb(88, 88, 88);
+  text-align: center;
+  padding: 1em;
+  border-radius: 10px;
+}
